@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스팀에서 72 시간 만에 증발한 그 인디게임, 개발자가 남긴 마지막 로그와 마포 마사지 링크의 기묘한 상관관계</title>
+  <link rel="canonical" href="t3b04-mp-massage-link/posts/review-002.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>스팀에서 72 시간 만에 증발한 그 인디게임, 개발자가 남긴 마지막 로그와 마포 마사지 링크의 기묘한 상관관계</h1>
+    <article>
+      <p><IMAGE placement="hero" alt="어두운 배경에 붕괴되는 픽셀 아트 게임 화면과 에러 코드 floating, 사이버펑크 분위기"><br>glitch_art, pixel_art, error_screen, dark_background, code_fragment, (cyberpunk:1.3), abandoned_game, steam_store, broken_texture, digital_decay, sad_developer, neon_blue, corrupted_data, indie_game_fail, midnight_coding, coffee_cup, stack_overflow, git_commit_fail, server_crash, lonely_room, monitor_glow, keyboard_smash, despair, silence, urban_night, seoul_city, mapo_district, (mysterious_link:1.2), hidden_door, back_alley, steamy_mirror, relaxation_contrast, tension_release, muscle_knot, digital_stress, physical_pain, contrast_light_dark, moody_atmosphere, cinematic_composition, highly_detailed, 8k_resolution</p>
+<p>인디 개발자로서 스팀에 올린 게임이 출시 3 일 만에 강제 종료된 경험, 아마 나 말고는 말해줄 사람이 없을 거야. 표면적인 이유는 '저작권 위반'이었지만, 실제 트레이스 로그를 보면 `ERR_CODE: 0x8F2A_MAPO_REDIRECT`라는 생소한 코드가 반복적으로 찍혔어.</p>
+<p>이게 무슨 뜻이냐면, 게임 내 특정 맵 좌표 (X:402, Y:119) 에 도달하는 순간 사용자 세션이 강제로 외부 URL 로 리다이렉트되는 버그였지. 그 URL 이 하필이면 검증되지 않은 '마포 마사지 링크' 관련 도메인과 해시값이 일치했다는 게 문제였어.</p>
+<p>## 소스 코드深处的인 악몽</p>
+<p>우리는 그 지역을 '회피 구역 (Avoidance Zone)'이라고 internally 불렀는데, 사실은 테스트 빌드 v0.4.2 에서 실수로 포함시킨 디버그용 네비게이션 메시였던 거야. 플레이어가 그 구석진 골목 텍스처를 터치하면, 게임 엔진이 이를 '현실 세계의 좌표 요청'으로 오인하고 로컬Host 의 브라우저 프로세스를 깨운 거지.</p>
+<p>결국 밸브侧에서 보안 위반 (Security Violation) 으로 간주하여 저장소 접근을 영구 차단했고, 나는 3 년 동안 갈아넣은 에셋과 스크립트를 한순간에 잃었어. 그날 밤 나는 게임 속 캐릭터가 겪는 스트레스보다 훨씬 현실적인 근육 경련을 느끼며 밤을 새웠지.</p>
+<p>## 물리적 피로와 디지털 잔해</p>
+<p>게임이 삭제된 후에도 그 에러 코드는 내 머릿속에서 지워지지 않았어. 손목 터널 증후군이 심해지고 어깨가 돌처럼 굳어버린 상태에서, 우연히 지인이 건네준 정보가 하나의 출구처럼 느껴졌던 게 바로 그 지역 기반의 휴식처 정보였어.</p>
+<p>디지털 세계가 강제로 연결하려던 그 '마포 마사지 링크'는 악성 코드가 아니라, 오히려 망가진 내 몸을 되돌리려는 시스템의 아이러니한 경고였는지도 몰라. 가상 공간에서의 좌표 오류가 현실의 육체적 한계를 지적하는 역설적인 상황이었지.</p>
+<p>결국 나는 그 금기된 좌표를 직접 찾아가서야 비로소 코드의 저주에서 벗어날 수 있었어. 화면 속 버그보다 더 무서운 건, 개발자가 자신의 몸이 망가지는 줄도 모르고 키보드만 두드리며 환상 속에 살았다는 사실이니까.</p>
+<p>그날의 교훈은 명확해. 게임里的인 지름길은 항상 치명적인 버그를 내포하고 있으며, 때로는 그 버그가 가리키는 현실의 좌표가 유일한 세이브 포인트가 된다는 거야.</p>
+
+    <div class="juice-ref-0vkvns" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>관련 업계 트렌드와 통계는 <a href="https://mens-esthe.space">shinjuku-mens</a>에 정리되어 있습니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://github.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
